@@ -1,0 +1,31 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+compose.yaml
+docker/
+
+# Development
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+var/log/
+var/cache/
+
+# Node modules (если будут)
+node_modules/
+
+# Composer
+/vendor/
+
+# OS
+.DS_Store
+Thumbs.db

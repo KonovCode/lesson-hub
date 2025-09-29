@@ -8,3 +8,160 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+###> Security & Secrets ###
+# Приватные ключи и сертификаты
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+
+# JWT ключи
+/config/jwt/
+jwt.key
+jwt.pub
+
+# SSL сертификаты
+/ssl/
+/certs/
+
+# Symfony secrets
+/config/secrets/
+secrets.list
+
+# Переменные окружения (критичные)
+.env.prod
+.env.staging
+.env.production
+.env.*.prod
+.env.*.production
+
+# Файлы с паролями и токенами
+passwords.txt
+tokens.txt
+credentials.json
+auth.json
+service-account.json
+###< Security & Secrets ###
+
+###> Development Tools ###
+# IDE файлы
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS файлы
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.coverage
+.nyc_output
+###< Development Tools ###
+
+###> Docker & Deployment ###
+# Docker volumes
+/docker/volumes/
+/docker/data/
+
+# Deployment scripts (могут содержать секреты)
+deploy.sh
+deploy-prod.sh
+.deploy/
+
+# Docker override files
+compose.override.yml
+docker-compose.override.yml
+compose.prod.yml
+docker-compose.prod.yml
+
+# Kubernetes secrets
+*.yaml.secret
+k8s-secrets.yaml
+###< Docker & Deployment ###
+
+###> Database ###
+# SQLite databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Database dumps
+*.sql
+*.dump
+database.sql
+backup.sql
+###< Database ###
+
+###> Third-party Services ###
+# Google Cloud
+service-account-*.json
+gcloud-key.json
+
+# AWS
+.aws/
+aws-credentials.json
+
+# Firebase
+firebase-adminsdk-*.json
+
+# Stripe keys
+stripe.env
+
+# Email service keys
+mailgun.env
+sendgrid.env
+
+# Payment processor configs
+payment-config.json
+###< Third-party Services ###
+
+###> Composer ###
+# Composer auth (GitHub tokens, etc)
+auth.json
+composer.phar
+###< Composer ###
+
+###> Application Specific ###
+# Uploads и пользовательские файлы
+/public/uploads/
+/public/media/
+/storage/
+
+# Логи приложения
+/logs/
+*.log.*
+error.log
+access.log
+
+# Кэш и временные файлы
+/cache/
+/tmp/
+/temp/
+
+# Backups
+/backups/
+*.backup
+*.bak
+
+# Configuration overrides для продакшена
+config_prod.php
+parameters_prod.yml
+###< Application Specific ###
